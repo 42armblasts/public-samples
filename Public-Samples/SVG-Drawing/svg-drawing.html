@@ -1,0 +1,177 @@
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'/>
+</head>
+	<style>
+	body {
+		margin: 0 auto;
+		padding: 0;
+	}
+	.container {
+		width: 80%;
+		position: relative;
+		margin: 150px auto;
+	}
+	.tester {
+		margin: 0 auto;
+	}
+	svg {
+	  /*max-width: 95%;
+	  max-height: 95%;*/
+	  position: relative;
+	  margin: auto;
+    width: 700px;
+    height: 200px;
+	}
+  .logo path, .logo rect, .logo polygon, .logo line, .logo text {
+    fill-opacity: 0;
+    stroke: #212121;
+    stroke-width: 1;
+    stroke-dasharray: 935;
+    stroke-dashoffset: 935;
+    -webkit-animation: draw 2s 1 linear;
+    -webkit-animation-fill-mode: forwards;
+  }
+  .heart-path {
+    fill-opacity: 0;
+    stroke: #212121;
+    stroke-width: 1;
+    fill: #f7a193;
+    stroke-dasharray: 135;
+    stroke-dashoffset: 135;
+    -webkit-animation: heart 2.5s 1 linear;
+    -webkit-animation-fill-mode: forwards;
+  }
+  .heart {
+    width: 400px;
+    display: block;
+  }
+  .logo {
+    display: block;
+  }
+  .az {
+    display: block;
+  }
+  .az-path {
+    stroke: #f1b46c;
+  }
+
+	@-webkit-keyframes draw {
+	  0 {
+      /*stroke-dashoffset: 835;
+      fill-opacity: 0;*/
+    }
+    40% {
+      fill-opacity: 0;
+      stroke-width: 1;
+    }
+    100% {
+	    stroke-dashoffset: 0;
+      fill-opacity: 1;
+      stroke-width: 0;
+	  }
+	}
+
+  @-webkit-keyframes heart {
+    0 {
+      stroke-dashoffset: 335;
+      fill-opacity: 0;
+    }
+    80% {
+      fill-opacity: 0;
+      stroke-width: 1;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill-opacity: 1;
+      stroke-width: 0;
+    }
+  }
+  @-webkit-keyframes clear {
+    0 {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      letter-spacing: 1;
+    }
+  }
+	.pink {
+		fill: #f7a193;
+	}
+  .tester p {
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 5rem;
+    color: #f7a193;
+    opacity: 0;
+    -webkit-animation: clear 1s 1 linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transform: translateX(-300px);
+    letter-spacing: 4rem;
+    font-weight: 100;
+  }
+
+  .tester a {
+    text-decoration: none;
+  }
+
+	</style>
+	<body>
+	<div class="container">
+		<div class="tester">
+			<a class="trigger" href="#">
+			<svg class="heart" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+			<g>
+				<path class="heart-path" fill="black" d="M40.001,3C60.402,3,77,19.598,77,40c0,20.402-16.598,37-36.999,37C19.599,77,3,60.402,3,40
+					C3,19.598,19.599,3,40.001,3 M40.001,0C17.909,0,0,17.909,0,40c0,22.092,17.909,40,40.001,40C62.092,80,80,62.092,80,40
+					C80,17.909,62.092,0,40.001,0L40.001,0z"/>
+				<path class="heart-path" fill="black" d="M40.001,32.646c0,0-4.511-6.67-10.98-6.666c-4.318,0.004-8.344,2.095-10.123,6.029
+					c-1.396,3.088-2.647,8.383,2.279,13.384c3.807,3.861,18.824,15.489,18.824,15.489V32.646z M40.001,32.646
+					c0,0,4.511-6.67,10.979-6.666c4.318,0.004,8.343,2.095,10.121,6.029c1.397,3.088,2.648,8.383-2.277,13.384
+					c-3.807,3.861-18.823,15.489-18.823,15.489V32.646z"/>
+			</g>
+			</svg>
+      <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="496.49px" height="62.588px" viewBox="0 0 496.49 62.588" enable-background="new 0 0 496.49 62.588" xml:space="preserve">
+        <g id="Shoemint_1_">
+          <g>
+            <polygon points="323.1,61.5 323.1,1 312.3,1 293.5,30.4 274.6,1 263.8,1 263.8,61.5 273.5,61.5 273.5,17.1 293.3,46.7 313.2,17 313.2,61.5"/>
+            <rect x="345.8" y="1" width="9.9" height="60.4"/>
+            <polygon points="431,61.5 431,1 421.3,1 421.3,43.7 387.8,1 378.4,1 378.4,61.5 388.2,61.5 388.2,17.5 422.6,61.5"/>
+            <polygon points="496.5,1 447.6,1 447.6,10.2 467,10.2 467,61.5 477.1,61.5 477.1,10.2 496.5,10.2"/>
+          </g>
+          <path d="M24.895 28.673C10.613 25.7 7.8 21.8 7.8 15.852c0-6.285 5.963-10.849 14.177-10.849 c6.709 0 12 2 17.2 6.378l0.637 0.537l3.344-4.153l-0.645-0.508c-6.461-5.101-12.186-7.088-20.416-7.088 c-11.18 0-19.607 6.927-19.607 16.281c0 9.3 5.9 14.3 20.5 17.211c12.228 2.5 16.6 5.7 16.6 12.5 c0 6.633-6.177 11.447-14.688 11.447c-8.164 0-14.201-2.46-20.836-8.489l-0.613-0.559L0 52.489l0.608 0.5 c7.381 6.5 14.8 9.4 24 9.394c11.897 0 20.206-6.87 20.206-16.878C44.846 36.6 38.9 31.5 24.9 28.673z"/>
+          <polygon points="107.8,61.6 107.8,1 102.5,1 102.5,28.7 67.2,28.7 67.2,1 62,1 62,61.6 67.2,61.6 67.2,33.6 102.5,33.6 102.5,61.6"/>
+          <path d="M186.152 31.122C186.152 13.4 173.1 0 155.8 0c-19.111 0-30.529 15.91-30.529 31.5 c0 17.7 13.1 31.1 30.4 31.124C174.732 62.6 186.2 46.7 186.2 31.122z M155.793 57.8 c-14.071 0-25.096-11.624-25.096-26.635c0-14.987 10.715-26.291 24.926-26.291c14.072 0 25.1 11.6 25.1 26.6 C180.722 46.5 170 57.8 155.8 57.757z"/>
+          <polygon points="244.9,5.9 244.9,1 203.7,1 203.7,61.6 245.3,61.6 245.3,56.6 209,56.6 209,33.5 241,33.5 241,28.6 209,28.6 209,5.9"/>
+        </g>
+      </svg>
+      <!-- <p>STICKERS</p> -->
+			</a>
+		</div>
+		
+	</div>
+	<script>
+		// $('.trigger').click(function() {
+		// 	console.log("click happened")
+		// 	$('.heart-path').attr('class', 'heart-path pink');
+		// 	console.log("new color")
+		// });
+		$(document).ready(function(){
+          $(".trigger").click(function(){
+          	console.log("click happened")
+          	$('.heart-path').attr('class', 'heart-path pink');
+            if($('.heart-path').hasAttr('class', 'heart-path pink')) {
+              $('.heart-path').removeAttr('class', 'pink');
+              } else {    
+              $('.heart-path').addAttr('class', 'pink');
+	        }
+	      });
+	    });	
+	</script>	
+	</body>
+</html>
